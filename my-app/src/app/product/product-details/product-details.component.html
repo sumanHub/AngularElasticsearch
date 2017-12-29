@@ -1,0 +1,33 @@
+<div class="container-fluid">
+  <div *ngIf="analyst">
+  <div class="row">
+    <div class="col-xs-3"  style="background-color:red;">{{analyst.fileName}}</div>
+    <div class="col-xs-9" style="background-color:lavender;"><label>reportTitle:  {{analyst.reportTitle}}</label></div>
+  
+ 
+  </div>
+  <div class="row">
+  <div class="col-xs-3"></div>
+  <div class="col-xs-3" style="background-color:lavender;"> <label>state:  {{analyst.state}}</label></div>
+    <div class="col-xs-3" style="background-color:lavender;"> <label>upsidePercent:  {{analyst.upsidePercent}} </label></div>
+  <div class="col-xs-3" style="background-color:lavender;"> <label>Target:  {{analyst.Target}} </label></div>
+ 
+  </div>
+  <div class="row">
+  <div class="col-xs-3" ></div>
+   <div class="col-xs-3" style="background-color:lavender;"><label>remainingdownloads:{{analyst.remainingdownloads}}</label></div>
+    <div class="col-xs-3" style="background-color:lavender;"> <label>purchase:  <a href={{analyst.purchase}}>
+          <span class="glyphicon glyphicon-download-alt"></span>
+        </a></label></div>
+  <div class="col-xs-3" style="background-color:lavender;"><label>analystFirm:  {{analyst.analystFirm}}</label> </div>
+  
+  </div>
+   <div class="row">
+  <div class="col-xs-3"></div>
+  
+ <div class="col-xs-9" style="background-color:lavender;"><label>uploaderName: {{analyst.uploaderName}} </label></div>
+ 
+  </div>
+ </div>
+</div>
+    

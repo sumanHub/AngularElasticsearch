@@ -1,0 +1,11 @@
+<div style="margin-top:20px">
+  <input type="text" (keyup)="search($event)" placeholder="enter filename" class="input">
+
+  <div *ngFor="let productSource of productSources" style="margin-top:20px">
+    <product-details [analyst]='productSource._source'></product-details>
+  </div>
+
+  <div *ngIf="productSources?.length < 1" style="margin-top:20px">
+    <p>Not found!</p>
+  </div>
+</div>
